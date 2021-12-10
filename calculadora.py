@@ -48,4 +48,4 @@ while True:
             print('') # Pulando uma linha
 
     except:
-        print('\nErro!')
+        print('\n|Erro! Insira apenas números.|\n')
