@@ -1,68 +1,51 @@
-import time # Biblioteca time
-
 print('---------------------')
 print('Calculadora em Python')
 print('---------------------\n')
 
-# Criando as funções de soma, subtração, etc.
-
-def soma(x, y):
+def soma(x, y): # Soma
     return x + y
 
-def subtracao(x, y):
+def sub(x, y): # Subtração
     return x - y
 
-def multiplicacao(x, y):
+def mult(x, y): # Multiplicação
     return x * y
 
-def divisao(x, y):
+def divisao(x, y): # Divisão
     return x / y
+
 
 
 while True:
     try:
-        escolha = input('''
-Selecione:
-
-[1] Soma
-[2] Subtração
-[3] Multiplicação
-[4] Divisão
-
-Sua escolha: ''')
+        escolha = input('[1] Soma\n[2] Subtração\n[3] Multiplicação\n[4] Divisão\n\nSua escolha: ')
 
         if escolha in ('1', '2', '3', '4'):
 
-            x = int(input('Insira um número: '))
+            x = int(input('\nInsira um número: '))
             y = int(input('Insira outro número: '))
 
             print('') # Pulando uma linha
-            print('') # Pulando uma linha
-
+            
             if escolha == '1':
                 print(f'{x} + {y} =', soma(x, y))
             
             elif escolha == '2':
-                print(f'{x} - {y} =', subtracao(x, y))
+                print(f'{x} - {y} =', sub(x, y))
 
             elif escolha == '3':
-                print(f'{x} * {y} =', multiplicacao(x, y))
-            
+                print(f'{x} * {y} =', mult(x, y))
+
             elif escolha == '4':
                 print(f'{x} / {y} =', divisao(x, y))
-            
-            # Repetir
+
+            print('\n------------------------------------')
 
             if str(input('\nVocê deseja repetir? (sim/nao): ')).lower() in ['n', 'nao', 'não']:
-                print('\nObrigado por usar o programa :)')
+                print('\nObrigado por usar o programa! :)')
                 break
             
-        else:
-            print('\n-------------------')
-            print('Escolha inválida!')
-            print('-------------------')
-            
-            time.sleep(1)
+            print('') # Pulando uma linha
 
     except:
         print('\nErro!')
