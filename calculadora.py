@@ -47,5 +47,5 @@ while True:
             
             print('') # Pulando uma linha
 
-    except:
-        print('\n|Erro! Insira apenas números.|\n')
+    except ValueError:
+        print("\nErro:", ValueError, "| Utilize apenas números!\n")
