@@ -47,5 +47,8 @@ while True:
             
             print('') # Pulando uma linha
 
+        else:
+            print('\nEscolha inválida!\n')
+
     except ValueError:
         print("\nErro:", ValueError, "| Utilize apenas números!\n")
