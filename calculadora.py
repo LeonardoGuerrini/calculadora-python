@@ -22,8 +22,8 @@ while True:
 
         if escolha in ('1', '2', '3', '4'):
 
-            x = int(input('\nInsira um número: '))
-            y = int(input('Insira outro número: '))
+            x = float(input('\nInsira um número: '))
+            y = float(input('Insira outro número: '))
 
             print('') # Pulando uma linha
             
